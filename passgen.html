@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" defer src="js.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+	<h2 class="title">ŞİFRE OLUŞTURUCU</h2>
+	<div class="result">
+		<div class="result__title field-title">Şifre Oluşturucu</div>
+		<br>
+		<center><div class="result__viewbox" id="result"></div></center>
+		<br>
+		<button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
+	</div>
+	<div class="length range__slider" data-min="4" data-max="32">
+		<div class="length__title field-title" data-length='0'>uzunluk:</div>
+		<input id="slider" type="range" min="4" max="32" value="16" />
+	</div>
+
+	<div class="settings">
+		<span class="settings__title field-title">Seçenekler</span>
+		<div class="setting">
+			<input type="checkbox" id="uppercase" checked />
+			<label for="uppercase">Büyük Harf</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="lowercase" checked />
+			<label for="lowercase">Küçük Harf</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="number" checked />
+			<label for="number">Rakam</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="symbol" />
+			<label for="symbol">Özel Karakter</label>
+		</div>
+	</div>
+
+	<button class="btn generate" id="generate">ŞİFRE OLUŞTUR</button>
+</div>
+
+</body>
+</html>
